@@ -1,0 +1,22 @@
+:root{--bg:#f7f8f5;--ink:#1c2a2a;--muted:#5d6f6b;--accent:#2f7d6d;--line:#d9e0db}
+@media (prefers-color-scheme:dark){:root{--bg:#172120;--ink:#e6eeea;--muted:#9bb0aa;--accent:#6cc2ae;--line:#2c3c3a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.05rem/1.65 Charter,Georgia,serif}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem 4rem}
+header{padding:2rem 0 1rem;border-bottom:1px solid var(--line);margin-bottom:2rem}
+header a.name{font:700 1.5rem system-ui,sans-serif;color:var(--ink);text-decoration:none}
+nav{margin-top:.5rem;font:.95rem system-ui,sans-serif}
+nav a{margin-right:1.2rem;color:var(--muted);text-decoration:none}
+nav a:hover,nav a[aria-current]{color:var(--accent);border-bottom:2px solid var(--accent)}
+a{color:var(--accent)}
+h1{font:700 2rem system-ui,sans-serif;margin:0 0 .5rem}
+h2{font:700 1.2rem system-ui,sans-serif;margin:2.2rem 0 .6rem;padding-bottom:.3rem;border-bottom:1px solid var(--line)}
+.sub{color:var(--muted);margin:0}
+.item{margin:0 0 1.1rem}.item b{font-family:system-ui,sans-serif}
+.pub{margin:0 0 1.1rem}.pub em{color:var(--muted)}
+.tag{font:.75rem system-ui,sans-serif;background:var(--line);padding:.1rem .5rem;border-radius:3px;white-space:nowrap}
+ul{padding-left:1.2rem;margin:.3rem 0}
+.skills dt{font:700 .95rem system-ui,sans-serif;margin-top:.7rem}.skills dd{margin:0;color:var(--muted)}
+.card{display:block;border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;text-decoration:none;color:var(--ink);margin-bottom:1rem}
+.card:hover{border-color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
